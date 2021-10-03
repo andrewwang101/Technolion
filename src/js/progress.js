@@ -1,3 +1,4 @@
+/*
 $(document).ready(function () {
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
@@ -10,3 +11,4 @@ $(document).ready(function () {
         $curr.prevAll().addClass("visited");
     });
 });
+*/

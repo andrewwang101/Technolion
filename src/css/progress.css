@@ -3,15 +3,20 @@
     font-family:'PT Sans Caption', sans-serif;
     margin-top: 90px;
     z-index: 0;
-}
+}   
+.checkout-bar-non {
+    font-family:'PT Sans Caption', sans-serif;
+    margin-top: 300px;
+    z-index: 0;
+}   
 ul.checkout-bar li {
     color: #ccc;
     font-size: 16px;
     font-weight: 600;
     position: relative;
     display: inline-block;
-    /*margin: 50px auto;*/
-    /*padding: 0;*/
+    margin: 0px auto;
+    padding: 0;
     text-align: center;
     width: 24.5%;
 }
@@ -34,9 +39,16 @@ ul.checkout-bar li:before {
     width: 34px;
     z-index: 99999;
 }
+
+ul.checkout-bar li.inactive {
+    top: 50px;
+}
+
 ul.checkout-bar li.active {
     color: #A6447A;
     font-weight: bold;
+    
+    top: 50px;
 }
 ul.checkout-bar li.active:before {
     background: #A6447A;
@@ -106,10 +118,10 @@ ul.checkout-bar {
     background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
     border-radius: 15px;
     height: 15px;
-    margin: 0 -35% 0;
+    margin: -30px    -70px 0;
     padding: 0;
     position: absolute;
-    width: 100%;
+    width: 100%; 
 }
 ul.checkout-bar:before {
     background-size: 35px 35px;
@@ -123,7 +135,7 @@ ul.checkout-bar:before {
     height: 15px;
     left: 0;
     position: absolute;
-    width: 14%;
+    width: 25%;
 }
 ul.checkout-bar li.visited:after {
     background-size: 35px 35px;
